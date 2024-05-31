@@ -63,8 +63,8 @@ arr.forEach(element => {
     element.addEventListener('mouseleave',scaleDown)
 });
 arr[0].addEventListener('click',()=>{
-    window.location.href='../intec/intec.html'
+    window.location.href='./intec/intec.html'
 });
 arr[1].addEventListener('click',()=>{
-    window.location.href='../leonis/leonis.html'
+    window.location.href='./leonis/leonis.html'
 });
