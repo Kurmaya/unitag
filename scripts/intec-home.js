@@ -90,13 +90,13 @@ tl
  
 },'<')
 }
-
+//section2 animation
 const items = document.querySelectorAll('.prods-item');
 let productsAnim= gsap.timeline({
     scrollTrigger:{
         trigger:'#section2',
         start:'top 70%',
-        makers:true,
+        // makers:true,
         // toggleActions: 'play none play reverse'
     }
 })
@@ -128,4 +128,23 @@ items.forEach(item=>{
         duration:.3,
         ease: "elastic.out(.4,0.3)",
     })
+})
+//section3 animation
+let aboutAnim= gsap.timeline({
+    scrollTrigger:{
+        trigger:'#section3',
+        start:'top 70%',
+        // makers:true,
+        // toggleActions: 'play none play reverse'
+    }
+})
+aboutAnim.from('#section3 h2',{
+    x:-1000,
+    duration:.3,
+    ease:'power1'
+})
+.from('.about-desc p',{
+    scale:0,
+    duration:.3,
+    ease: "elastic.out(.4,0.3)",
 })

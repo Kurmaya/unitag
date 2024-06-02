@@ -49,7 +49,7 @@
             
             <img src="../assets/product images/Intec laptops/i series/compressed/Q354-4_new.jpg" alt="">
             <h3>Laptops</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, ipsam.</p>
+            <p>Portable, versatile, and powerful, laptops are essential devices for work, study, and entertainment, combining mobility with computing capabilities efficiently.</p>
         </div></a>
         <a href="">
             <div class="prods-item">
@@ -98,8 +98,25 @@
 
     </section>
     <section id="section4">
+        <div class="section-wrapper">
+            <h2>Get In Touch With Us</h2>
+            <form action="https://formsubmit.co/your@email.com" method="POST">
+                <input type="text" name="name" required placeholder="Your name">
+                <input type="email" name="email" required placeholder="email">
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <button type="submit">Send</button>
+           </form>
+           
+        </div>
 
     </section>
+    <footer>
+        <p>© Intec <span class="year"></span> </p>
+    </footer>
+    <script>
+        
+        document.querySelector('.year').textContent= (new Date().getFullYear());
+    </script>
     <script src="../scripts/gsap.min.js"></script>
     <script src="../scripts/gsap.scrollTrigger.min.js"></script>
     <script src="../scripts/intec-home.js"></script>

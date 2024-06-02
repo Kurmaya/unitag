@@ -13,7 +13,7 @@ a{
     color:black;
 }
 nav{
-
+/* position: fixed; */
     width: 100%;
     z-index: 10;
 }
@@ -265,11 +265,13 @@ color:#152445;
   gap:20px;
 }
 .prods-item{
-    display: grid;
-    place-items: center;
-    gap:10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
     background: #eeeeee57;
-    
+    height: 295px;
+    justify-content: center;
+    align-items: center;
 }
 
 .prods-item h3{
@@ -281,11 +283,13 @@ color:#152445;
     width:80%;
     margin: auto;
     text-align: center;
+    line-height: 1.5;
 }
 .prods-item img{
     width:175px;
     height: 150px;
     object-fit: contain;
+    padding:.5rem;
     
 }
 /* section3 */
@@ -294,17 +298,9 @@ color:#152445;
     width: 100%;
     background: aliceblue;
     /* height: 100%; */
+    /* padding:0 0 10rem 0; */
 }
-#section3::before{
-    content: '';
-    position: absolute;
-    width:100%;
-    height: 100%;
-    background-image: url('../assets/intec\ wtl\ logoAsset\ 1.svg');
-    background-position: center ;
-    background-repeat: no-repeat;
-    opacity: .3;
-}
+
 .about-desc{
     position: relative;
     width: 100%;
@@ -312,8 +308,8 @@ color:#152445;
     
 }
 .about-desc p{
-    width:80%;
-    margin-right:30px;
+    width:60%;
+    line-height: 1.5;
 }
 .about-desc img{
     position: absolute;
@@ -321,4 +317,49 @@ color:#152445;
     height: 180px;
     top:-25px;
     display: none;
+}
+/*section4 */
+form{
+    width: 100%;
+    height:60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    gap:20px;
+    background:#ddd;
+    padding:1rem;
+    margin: auto;
+
+}
+form input,textarea{
+    width:60%;
+    padding:.5rem;
+    border-radius: 20px;
+    border: none;
+}
+form input::placeholder,form textarea::placeholder{
+    padding-left: 1rem;
+}
+form button{
+    width:300px;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    transition: .3s ease;
+    background: #152445;
+    color:white;
+}
+form button:hover{
+
+}
+footer{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    /* background: aliceblue; */
+    /* color:white; */
 }
